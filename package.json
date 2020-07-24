@@ -1,6 +1,5 @@
 {
-  "name": "personal-site",
-  "version": "0.1.0",
+  "name": "nextjs-ssg-starter",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -8,8 +7,11 @@
     "start": "next start"
   },
   "dependencies": {
+    "@emotion/core": "^10.0.28",
+    "@emotion/styled": "^10.0.27",
     "next": "9.4.4",
     "react": "16.13.1",
-    "react-dom": "16.13.1"
+    "react-dom": "16.13.1",
+    "standard": "^14.3.4"
   }
 }
