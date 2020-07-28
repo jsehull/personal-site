@@ -63,7 +63,7 @@ const Header = () => (
   <StyledHeader>
     <FlexContainer>
       <Link href='/'>
-        <NavLogo>Site Name/Logo</NavLogo>
+        <NavLogo>Jesse Hull</NavLogo>
       </Link>
       <NavBar>
         <Li>
