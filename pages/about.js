@@ -1,14 +1,104 @@
+import styled from '@emotion/styled'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import Section from '../components/Section'
+
+const Bullets = styled.div`
+  display: flex;
+  flex-flow: row wrap;
+
+  ul {
+    padding-left: 20px;
+    width: 170px;
+  }
+`
 
 const about = () => {
   return (
     <>
       <Header />
 
-      <Section bg='lavender'>
-        <h1>About</h1>
+      <Section bg='lightyellow'>
+        <h1>About Me</h1>
+        <p>
+          I'm a product guy. That means I like to fine-tune and craft my work
+          with excellence 💎. Every detail matters to me.
+        </p>
+
+        <p>
+          I'm a forever learner📚 who loves to absorb information from anyone
+          and everywhere I can. Growing as an individual is what keeps me
+          focused and entertained as I go through life.
+        </p>
+
+        <p>
+          I've been fortunate enough to have encountered many different life
+          experiences, like climbing my first mountains recently (☝ 😄). As
+          fellow tech-industry folk, we know how valuable balance and
+          perspective is away from the screen, so we can think more clearly at
+          it. Mountain air be good for ya ha.
+        </p>
+
+        <h2>Current skills & workflow</h2>
+        <Bullets>
+          <ul>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Next.JS </li>
+          </ul>
+          <ul>
+            <li>Responsive Design</li>
+            <li>UI/UX</li>
+            <li>CSS-in-JS</li>
+            <li>Sass</li>
+            <li>HTML</li>
+          </ul>
+          <ul>
+            <li>Netlify</li>
+            <li>GitHub</li>
+          </ul>
+          <ul>
+            <li>VSCode</li>
+            <li>Vim</li>
+            <li>GIMP 2</li>
+          </ul>
+        </Bullets>
+
+        <h2>Toolbelt from previous work</h2>
+        <Bullets>
+          <ul>
+            <li>PHP</li>
+            <li>CodeIgniter</li>
+            <li>Laravel</li>
+            <li>Vagrant (Homestead)</li>
+            <li>nginx</li>
+          </ul>
+          <ul>
+            <li>ES5 ha</li>
+            <li>jQuery</li>
+            <li>AJAX</li>
+          </ul>
+          <ul>
+            <li>MySQL</li>
+            <li>PuTTY</li>
+          </ul>
+          <ul>
+            <li>Bootstrap</li>
+          </ul>
+          <ul>
+            <li>Bitbucket</li>
+            <li>Firebase</li>
+          </ul>
+          <ul>
+            <li>Bower</li>
+            <li>Grunt</li>
+            <li>Gulp</li>
+          </ul>
+          <ul>
+            <li>HipChat</li>
+            <li>Sublime</li>
+          </ul>
+        </Bullets>
       </Section>
 
       <Footer />

@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import styled from '@emotion/styled'
+import theme from '../styles/theme'
 
 const StyledHeader = styled.header`
   margin: 0 auto;
@@ -13,13 +14,14 @@ const FlexContainer = styled.div`
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  max-width: 1280px;
+  max-width: ${theme.width.desktop};
 
   @media (min-width: 950px) {
     padding: 10px 25px;
     flex-direction: row;
   }
 `
+
 const NavLogo = styled.a`
   margin: 10px 0;
   font-size: 1.5em;

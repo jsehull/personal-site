@@ -1,4 +1,5 @@
 import styled from '@emotion/styled'
+import theme from '../styles/theme'
 
 const StyledSection = styled.section`
   width: 100%;
@@ -9,7 +10,7 @@ const StyledSection = styled.section`
 const Container = styled.div`
   margin: 0 auto;
   padding: 50px 15px;
-  max-width: 1280px;
+  max-width: ${theme.width.desktop};
 `
 
 const Section = ({ id, bg, color, children }) => {

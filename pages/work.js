@@ -1,6 +1,7 @@
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import Section from '../components/Section'
+import RecentWork from '../components/RecentWork'
 
 const projects = () => {
   return (
@@ -8,7 +9,8 @@ const projects = () => {
       <Header />
 
       <Section bg='lavender'>
-        <h1>Work</h1>
+        <h2>Developer Experience</h2>
+        <RecentWork data='work' />
       </Section>
 
       <Footer />
