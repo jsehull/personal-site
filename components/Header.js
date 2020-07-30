@@ -5,34 +5,29 @@ import theme from '../styles/theme'
 const StyledHeader = styled.header`
   margin: 0 auto;
   width: 100%;
-  background: coral;
+  background: #c7ffc7;
 `
 
 const FlexContainer = styled.div`
   margin: 0 auto;
+  padding: 1em;
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  max-width: ${theme.width.desktop};
-
-  @media (min-width: 950px) {
-    padding: 10px 25px;
-    flex-direction: row;
-  }
+  max-width: ${theme.misc.widthDesktop};
 `
 
 const NavLogo = styled.a`
-  margin: 10px 0;
-  font-size: 1.5em;
+  margin: 0;
+  font-size: 1.3em;
   font-weight: bold;
 
   &:hover {
     cursor: pointer;
   }
 
-  img {
-    width: 50px;
+  @media (min-width: 350px) {
+    font-size: 1.5em;
   }
 `
 
@@ -46,26 +41,26 @@ const NavBar = styled.ul`
 `
 
 const Li = styled.li`
-  margin: 5px;
-  font-size: 0.9em;
+  margin: 0;
+  padding: 5px;
+  font-size: 0.8em;
 
+  @media (min-width: 350px) {
+    font-size: 0.9em;
+  }
   @media (min-width: 950px) {
-    margin: 10px;
+    padding: 10px;
     font-size: 1em;
   }
 `
 
-const A = styled.a`
-  &:hover {
-    text-decoration: underline;
-  }
-`
+const A = styled.a``
 
 const Header = () => (
   <StyledHeader>
     <FlexContainer>
       <Link href='/'>
-        <NavLogo>Jesse Hull</NavLogo>
+        <NavLogo>jsehull</NavLogo>
       </Link>
       <NavBar>
         <Li>

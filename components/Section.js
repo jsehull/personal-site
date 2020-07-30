@@ -9,8 +9,8 @@ const StyledSection = styled.section`
 
 const Container = styled.div`
   margin: 0 auto;
-  padding: 50px 15px;
-  max-width: ${theme.width.desktop};
+  padding: 3em 1em;
+  max-width: ${theme.misc.widthDesktop};
 `
 
 const Section = ({ id, bg, color, children }) => {

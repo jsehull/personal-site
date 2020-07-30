@@ -6,7 +6,7 @@ const StyledFooter = styled.footer`
   align-items: center;
   width: 100%;
   height: 100px;
-  background: coral;
+  background: #c7ffc7;
   text-align: center;
 
   div {
@@ -16,6 +16,10 @@ const StyledFooter = styled.footer`
 
   a {
     margin: 10px;
+
+    &:hover {
+      border-bottom: none;
+    }
   }
 `
 

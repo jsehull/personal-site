@@ -5,7 +5,7 @@ export const personal = [
     description:
       'React Router, React Hooks (useState, useEffect, useContext), PropTypes',
     thumbnail: '/images/work/test-tms.png',
-    codeUrl: 'https://github.com/jsehull/cra-ecommerce',
+    codeURL: 'https://github.com/jsehull/cra-ecommerce',
     siteURL: '#'
   },
   {
@@ -13,7 +13,7 @@ export const personal = [
     title: 'speed-typing',
     description: 'CRA + React hooks (useState, useEffect, useRef, useContext)',
     thumbnail: '/images/work/test-tms.png',
-    codeUrl: 'https://github.com/jsehull/speed-typing',
+    codeURL: 'https://github.com/jsehull/speed-typing',
     siteURL: '#'
   },
   {
@@ -21,7 +21,7 @@ export const personal = [
     title: 'cra-trello-clone',
     description: 'TS, React Hooks',
     thumbnail: '/images/work/test-tms.png',
-    codeUrl: 'https://github.com/jsehull/cra-trello-clone',
+    codeURL: 'https://github.com/jsehull/cra-trello-clone',
     siteURL: '#'
   },
   {
@@ -29,7 +29,7 @@ export const personal = [
     title: 'disco-tussle',
     description: 'vanilla JS, memory game, turn logic',
     thumbnail: '/images/work/test-tms.png',
-    codeUrl: 'https://github.com/jsehull/disco-tussle',
+    codeURL: 'https://github.com/jsehull/disco-tussle',
     siteURL: '#'
   }
 ]

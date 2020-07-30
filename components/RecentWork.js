@@ -5,17 +5,18 @@ const Image = styled.img`
   width: 200px;
 `
 
-const RecentWork = data => {
-  data === 'work' ? (data = personal) : (data = work)
+const RecentWork = ({ data }) => {
+  let project
+  data === 'personal' ? (project = personal) : (project = work)
 
   return (
     <>
-      {data.map(repo => (
+      {project.map(repo => (
         <div key={repo.id}>
           <h3>{repo.title}</h3>
           <p>{repo.description}</p>
-          <a href={repo.url} target='_blank' rel='noopener noreferrer'>
-            visit repository
+          <a href={repo.codeURL} target='_blank' rel='noopener noreferrer'>
+            view code
           </a>
           <Image src={repo.thumbnail} alt={`${repo.title} website`} />
         </div>
@@ -25,23 +26,3 @@ const RecentWork = data => {
 }
 
 export default RecentWork
-
-// v3 REST vs v4 GraphQL??
-
-// useEffect(() => {
-//   fetch('https://api.github.com/users/jsehull/repos')
-//     .then(response => response.json())
-//     .then(data => setRepos(data))
-
-// }, [])
-
-// const repoArr = repos.map(repo => {
-//   if(repo.private === false) {
-//     return `
-//       <div>
-//         <h3>${repo.name}</h3>
-//         <p>${repo.description}</p>
-//       </div>
-//     `
-//   }
-// })

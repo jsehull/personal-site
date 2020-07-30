@@ -9,7 +9,7 @@ const projects = () => {
       <Header />
 
       <Section bg='lavender'>
-        <h2>Developer Experience</h2>
+        <h1>Developer Experience</h1>
         <RecentWork data='work' />
       </Section>
 

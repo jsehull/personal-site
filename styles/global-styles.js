@@ -10,16 +10,25 @@ const globalStyles = css`
     margin: 0;
     padding: 0;
     -webkit-font-smoothing: antialiased;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+      Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+      'Segoe UI Symbol';
   }
 
+  h1,
+  h2,
+  h3 {
+    font-family: ${theme.misc.firaCode};
+  }
+
+  h1,
   h2 {
-    margin-bottom: 0;
-    border-bottom: 2px solid lightblue;
+    margin: 0 auto;
+    border-bottom: ${theme.misc.underlineTwoPx};
   }
 
   h3 {
-    border-top: 1px dashed lightblue;
-    border-bottom: 1px solid lightblue;
+    border-bottom: ${theme.misc.underlineOnePx};
   }
 
   img {
@@ -27,7 +36,14 @@ const globalStyles = css`
   }
 
   a {
+    font-family: ${theme.misc.firaCode};
     color: ${theme.colors.black};
+    text-decoration: none;
+
+    &:hover {
+      cursor: pointer;
+      border-bottom: ${theme.misc.underlineTwoPx};
+    }
   }
 `
 

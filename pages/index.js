@@ -10,13 +10,23 @@ const Index = () => {
       <Head>
         <title>Jesse Hull</title>
         <link rel='icon' href='/favicon.ico' />
+        <link
+          href='https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap'
+          rel='stylesheet'
+        />
       </Head>
 
       <Header />
 
-      <Section bg='lavender'>
-        <h1>Hey, I'm Jesse.</h1>
-        <p>I'm a Front-End Developer and I live in Colorado.</p>
+      <Section bg='lightyellow'>
+        <h1>Hey, I'm Jesse 😄</h1>
+        <p>
+          I'm a <b>Front-End Developer</b> and I live in Colorado.
+        </p>
+        <p>
+          Currently looking for <b>remote work</b> with a team that understands{' '}
+          <b>culture is grown</b>, not manufactured.
+        </p>
       </Section>
 
       <Section bg='lightcyan'>
