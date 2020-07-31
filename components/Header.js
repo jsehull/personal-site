@@ -5,7 +5,7 @@ import theme from '../styles/theme'
 const StyledHeader = styled.header`
   margin: 0 auto;
   width: 100%;
-  background: #c7ffc7;
+  background: ${theme.colors.green};
 `
 
 const FlexContainer = styled.div`
@@ -24,6 +24,7 @@ const NavLogo = styled.a`
 
   &:hover {
     cursor: pointer;
+    border-bottom: none;
   }
 
   @media (min-width: 350px) {
@@ -43,7 +44,25 @@ const NavBar = styled.ul`
 const Li = styled.li`
   margin: 0;
   padding: 5px;
+  border: 2px solid transparent;
   font-size: 0.8em;
+
+  &:hover {
+    border: 2px solid rgba(173, 216, 230, 0.25);
+    cursor: pointer;
+  }
+
+  &:first-child:hover {
+    background: ${theme.colors.yellow};
+  }
+
+  &:nth-child(2):hover {
+    background: ${theme.colors.blueLight};
+  }
+
+  &:nth-child(3):hover {
+    background: ${theme.colors.purple};
+  }
 
   @media (min-width: 350px) {
     font-size: 0.9em;
@@ -54,7 +73,11 @@ const Li = styled.li`
   }
 `
 
-const A = styled.a``
+const A = styled.a`
+  &:hover {
+    border-bottom: none;
+  }
+`
 
 const Header = () => (
   <StyledHeader>
@@ -63,26 +86,21 @@ const Header = () => (
         <NavLogo>jsehull</NavLogo>
       </Link>
       <NavBar>
-        <Li>
-          <Link href='/about'>
+        <Link href='/about'>
+          <Li>
             <A>About</A>
-          </Link>
-        </Li>
-        <Li>
-          <Link href='/work'>
+          </Li>
+        </Link>
+        <Link href='/work'>
+          <Li>
             <A>Work</A>
-          </Link>
-        </Li>
-        <Li>
-          <Link href='/blog'>
+          </Li>
+        </Link>
+        <Link href='/blog'>
+          <Li>
             <A>Blog</A>
-          </Link>
-        </Li>
-        <Li>
-          <Link href='/contact'>
-            <A>Contact</A>
-          </Link>
-        </Li>
+          </Li>
+        </Link>
       </NavBar>
     </FlexContainer>
   </StyledHeader>

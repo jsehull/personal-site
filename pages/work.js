@@ -8,7 +8,7 @@ const projects = () => {
     <>
       <Header />
 
-      <Section bg='lavender'>
+      <Section bg='blue'>
         <h1>Developer Experience</h1>
         <RecentWork data='work' />
       </Section>

@@ -1,4 +1,5 @@
 import styled from '@emotion/styled'
+import theme from '../styles/theme'
 
 const StyledFooter = styled.footer`
   display: flex;
@@ -6,7 +7,7 @@ const StyledFooter = styled.footer`
   align-items: center;
   width: 100%;
   height: 100px;
-  background: #c7ffc7;
+  background: ${theme.colors.green};
   text-align: center;
 
   div {

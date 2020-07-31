@@ -23,12 +23,21 @@ const globalStyles = css`
 
   h1,
   h2 {
-    margin: 0 auto;
-    border-bottom: ${theme.misc.underlineTwoPx};
+    margin: 0 auto 10px;
+    border-bottom: ${theme.misc.solidTwoPx};
+  }
+
+  h1 {
+    font-size: 2em;
   }
 
   h3 {
-    border-bottom: ${theme.misc.underlineOnePx};
+    margin: 1.25em 0;
+    border-bottom: ${theme.misc.dashedTwoPx};
+  }
+
+  p:last-child {
+    margin-bottom: 0;
   }
 
   img {
@@ -42,7 +51,7 @@ const globalStyles = css`
 
     &:hover {
       cursor: pointer;
-      border-bottom: ${theme.misc.underlineTwoPx};
+      border-bottom: ${theme.misc.solidTwoPx};
     }
   }
 `

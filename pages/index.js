@@ -18,10 +18,10 @@ const Index = () => {
 
       <Header />
 
-      <Section bg='lightyellow'>
-        <h1>Hey, I'm Jesse 😄</h1>
+      <Section bg='yellow'>
+        <h1>Hey, I'm Jesse</h1>
         <p>
-          I'm a <b>Front-End Developer</b> and I live in Colorado.
+          I'm a <b>Front-End Developer</b> and I live in Colorado 🏔.
         </p>
         <p>
           Currently looking for <b>remote work</b> with a team that understands{' '}
@@ -29,8 +29,13 @@ const Index = () => {
         </p>
       </Section>
 
-      <Section bg='lightcyan'>
-        <h2>Recent Activity</h2>
+      <Section bg='purple'>
+        <h2>Latest articles</h2>
+        <p>coming soon...</p>
+      </Section>
+
+      <Section bg='blue'>
+        <h2>Recent activity</h2>
         <RecentWork data='personal' />
       </Section>
 

@@ -7,7 +7,7 @@ const blog = () => {
     <>
       <Header />
 
-      <Section bg='lavender'>
+      <Section bg='purple'>
         <h1>Blog</h1>
       </Section>
 

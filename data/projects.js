@@ -30,11 +30,11 @@ export const personal = [
     description: 'vanilla JS, memory game, turn logic',
     thumbnail: '/images/work/test-tms.png',
     codeURL: 'https://github.com/jsehull/disco-tussle',
-    siteURL: '#'
+    siteURL: 'https://disco-tussle.netlify.app/'
   }
 ]
 
-export const work = [
+export const professional = [
   {
     id: '1',
     title: 'God in Your Garden',

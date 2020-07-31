@@ -14,8 +14,20 @@ const Container = styled.div`
 `
 
 const Section = ({ id, bg, color, children }) => {
+  let bgclr
+
+  if (bg === 'blue') {
+    bgclr = theme.colors.blueLight
+  } else if (bg === 'green') {
+    bgclr = theme.colors.green
+  } else if (bg === 'purple') {
+    bgclr = theme.colors.purple
+  } else if (bg === 'yellow') {
+    bgclr = theme.colors.yellow
+  }
+
   return (
-    <StyledSection id={id} bg={bg} color={color}>
+    <StyledSection id={id} bg={bgclr} color={color}>
       <Container>{children}</Container>
     </StyledSection>
   )
