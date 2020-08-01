@@ -17,15 +17,13 @@ const StyledFooter = styled.footer`
 
   a {
     margin: 10px;
+    border-bottom: none;
 
     &:hover {
       background: none;
-      border-bottom: none;
-      transition: all 0.3s ease-in-out 0s;
 
       svg {
         fill: ${theme.colors.blueMedium};
-        transition: all 1s ease-in-out 0s;
       }
     }
   }

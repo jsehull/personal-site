@@ -47,15 +47,16 @@ const globalStyles = css`
   }
 
   a {
-    font-family: ${theme.misc.firaCode};
     color: ${theme.colors.black};
+    font-family: ${theme.misc.firaCode};
+    border-bottom: ${theme.misc.solidTwoPx};
     text-decoration: none;
-    transition: all 0.3s ease-in-out 0s;
 
     &:hover {
       cursor: pointer;
       background: ${theme.colors.blueMedium};
     }
+  }
 `
 
 const GlobalStyles = () => <Global styles={globalStyles} />

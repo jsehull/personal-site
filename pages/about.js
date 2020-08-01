@@ -34,8 +34,8 @@ const about = () => {
         <Article>
           <h1>About me</h1>
           <p>
-            I'm a product guy. That means I like to fine-tune ⚖ and craft my
-            work with excellence.
+            I'm a product guy. That means I like to fine-tune ⚖ and craft{' '}
+            <a href='/work'>my work</a> with excellence.
           </p>
           <p>Every detail matters to me 💎.</p>
           <p>

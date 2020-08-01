@@ -6,6 +6,11 @@ const StyledHeader = styled.header`
   margin: 0 auto;
   width: 100%;
   background: ${theme.colors.green};
+
+  a {
+    font-weight: bold;
+    border-bottom: none;
+  }
 `
 
 const FlexContainer = styled.div`
@@ -47,6 +52,7 @@ const Li = styled.li`
   &:hover {
     cursor: pointer;
     border: ${theme.misc.solidTwoPx};
+    background: ${theme.colors.blueMedium};
   }
 
   &:first-child {
@@ -70,12 +76,9 @@ const Li = styled.li`
     padding: 10px;
     font-size: 1em;
   }
-`
 
-const A = styled.a`
-  &:hover {
+  a:hover {
     background: transparent;
-    border-bottom: none;
   }
 `
 
@@ -88,17 +91,17 @@ const Header = () => (
       <NavBar>
         <Link href='/about'>
           <Li>
-            <A>About</A>
+            <a>About</a>
           </Li>
         </Link>
         <Link href='/work'>
           <Li>
-            <A>Work</A>
+            <a>Work</a>
           </Li>
         </Link>
         <Link href='/blog'>
           <Li>
-            <A>Blog</A>
+            <a>Blog</a>
           </Li>
         </Link>
       </NavBar>

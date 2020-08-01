@@ -46,8 +46,6 @@ const TextBox = styled.div`
 
 const LinkBox = styled.div`
   a {
-    border-bottom: ${theme.misc.solidTwoPx};
-
     &:first-child {
       margin-right: 30px;
     }
