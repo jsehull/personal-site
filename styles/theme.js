@@ -1,7 +1,7 @@
 module.exports = {
   colors: {
-    black: '#000',
-    white: '#fff',
+    black: 'rgba(33, 33, 33, 0.8)',
+    blackHeader: 'rgba(33, 33, 33, 0.75)',
     blueLight: '#e0ffff',
     blueMedium: '#add8e6', // underlines
     green: '#c7ffc7',
@@ -10,10 +10,10 @@ module.exports = {
   },
   misc: {
     firaCode: "'Fira Code', monospace",
-    widthDesktop: '800px',
+    dashedTwoPx: '2px dashed #add8e6',
     solidOnePx: '1px solid #add8e6',
     solidTwoPx: '2px solid #add8e6',
-    dashedTwoPx: '2px dashed #add8e6'
+    widthDesktop: '800px'
   }
 }
 

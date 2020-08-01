@@ -9,16 +9,18 @@ const globalStyles = css`
   body {
     margin: 0;
     padding: 0;
-    -webkit-font-smoothing: antialiased;
+    color: ${theme.colors.black};
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
       Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
       'Segoe UI Symbol';
+    -webkit-font-smoothing: antialiased;
   }
 
   h1,
   h2,
   h3 {
     font-family: ${theme.misc.firaCode};
+    color: ${theme.colors.blackHeader};
   }
 
   h1,
@@ -48,12 +50,12 @@ const globalStyles = css`
     font-family: ${theme.misc.firaCode};
     color: ${theme.colors.black};
     text-decoration: none;
+    transition: all 0.3s ease-in-out 0s;
 
     &:hover {
       cursor: pointer;
-      border-bottom: ${theme.misc.solidTwoPx};
+      background: ${theme.colors.blueMedium};
     }
-  }
 `
 
 const GlobalStyles = () => <Global styles={globalStyles} />

@@ -19,7 +19,14 @@ const StyledFooter = styled.footer`
     margin: 10px;
 
     &:hover {
+      background: none;
       border-bottom: none;
+      transition: all 0.3s ease-in-out 0s;
+
+      svg {
+        fill: ${theme.colors.blueMedium};
+        transition: all 1s ease-in-out 0s;
+      }
     }
   }
 `

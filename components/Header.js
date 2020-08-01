@@ -19,16 +19,12 @@ const FlexContainer = styled.div`
 
 const NavLogo = styled.a`
   margin: 0;
-  font-size: 1.3em;
+  font-size: 1.5em;
   font-weight: bold;
 
   &:hover {
     cursor: pointer;
     border-bottom: none;
-  }
-
-  @media (min-width: 350px) {
-    font-size: 1.5em;
   }
 `
 
@@ -43,28 +39,31 @@ const NavBar = styled.ul`
 
 const Li = styled.li`
   margin: 0;
-  padding: 5px;
-  border: 2px solid transparent;
+  margin-right: 10px;
+  padding: 5px 7px;
   font-size: 0.8em;
+  border: 2px solid transparent;
 
   &:hover {
-    border: 2px solid rgba(173, 216, 230, 0.25);
     cursor: pointer;
+    border: ${theme.misc.solidTwoPx};
   }
 
-  &:first-child:hover {
+  &:first-child {
     background: ${theme.colors.yellow};
   }
 
-  &:nth-child(2):hover {
+  &:nth-child(2) {
     background: ${theme.colors.blueLight};
   }
 
-  &:nth-child(3):hover {
+  &:nth-child(3) {
+    margin-right: 0;
     background: ${theme.colors.purple};
   }
 
   @media (min-width: 350px) {
+    padding: 5px 10px;
     font-size: 0.9em;
   }
   @media (min-width: 950px) {
@@ -75,6 +74,7 @@ const Li = styled.li`
 
 const A = styled.a`
   &:hover {
+    background: transparent;
     border-bottom: none;
   }
 `
