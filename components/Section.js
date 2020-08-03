@@ -17,7 +17,7 @@ const Section = ({ id, bg, color, children }) => {
   let bgclr
 
   if (bg === 'blue') {
-    bgclr = theme.colors.blueLight
+    bgclr = theme.colors.blue
   } else if (bg === 'green') {
     bgclr = theme.colors.green
   } else if (bg === 'purple') {

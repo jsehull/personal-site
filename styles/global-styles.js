@@ -54,7 +54,7 @@ const globalStyles = css`
 
     &:hover {
       cursor: pointer;
-      background: ${theme.colors.blueMedium};
+      background: ${theme.colors.blueLines};
     }
   }
 `

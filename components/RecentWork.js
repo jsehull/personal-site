@@ -1,9 +1,14 @@
 import styled from '@emotion/styled'
-import theme from '../styles/theme'
 import { personal, professional } from '../data/projects'
 
+const ProjectContainer = styled.div`
+  display: ${props => (props.data === 'personal' ? 'flex' : 'block')};
+  flex-flow: row wrap;
+`
+
 const Project = styled.div`
-  margin-bottom: 30px;
+  margin: 0 auto 30px;
+  width: ${props => (props.data === 'personal' ? '350px' : '100%')};
 
   &:last-child {
     margin-bottom: 0;
@@ -14,7 +19,7 @@ const Flex = styled.div`
   display: flex;
   flex-flow: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 
   @media (min-width: 700px) {
     flex-direction: row;
@@ -22,6 +27,7 @@ const Flex = styled.div`
 `
 
 const ImageBox = styled.div`
+  margin: 0 auto;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -29,12 +35,13 @@ const ImageBox = styled.div`
   align-items: center;
 
   img {
-    width: 300px;
+    width: ${props => (props.data === 'personal' ? '100px' : '300px')};
+    box-shadow: 10px 10px 0px -5px #add8e6;
   }
 `
 
 const TextBox = styled.div`
-  flex: 1;
+  flex: ${props => (props.data === 'personal' ? 2 : 1)};
   width: 100%;
 
   @media (min-width: 700px) {
@@ -42,6 +49,10 @@ const TextBox = styled.div`
       margin-top: 0;
     }
   }
+`
+
+const Tags = styled.p`
+  font-weight: bold;
 `
 
 const LinkBox = styled.div`
@@ -57,15 +68,16 @@ const RecentWork = ({ data }) => {
   data === 'personal' ? (project = personal) : (project = professional)
 
   return (
-    <>
+    <ProjectContainer data={data}>
       {project.map(repo => (
-        <Project key={repo.id}>
-          <h3>{repo.title}</h3>
+        <Project key={repo.id} data={data}>
+          <h3>{repo.name}</h3>
           <Flex>
-            <ImageBox>
-              <img src={repo.thumbnail} alt={`${repo.title} website`} />
+            <ImageBox data={data}>
+              <img src={repo.thumbnail} alt={`${repo.name} website`} />
             </ImageBox>
-            <TextBox>
+            <TextBox data={data}>
+              {professional ? <Tags>{repo.tags}</Tags> : null}
               <p>{repo.description}</p>
               <LinkBox>
                 {repo.siteURL ? (
@@ -89,7 +101,7 @@ const RecentWork = ({ data }) => {
           </Flex>
         </Project>
       ))}
-    </>
+    </ProjectContainer>
   )
 }
 

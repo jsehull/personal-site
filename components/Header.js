@@ -52,7 +52,7 @@ const Li = styled.li`
   &:hover {
     cursor: pointer;
     border: ${theme.misc.solidTwoPx};
-    background: ${theme.colors.blueMedium};
+    background: ${theme.colors.blueLines};
   }
 
   &:first-child {
@@ -60,7 +60,7 @@ const Li = styled.li`
   }
 
   &:nth-child(2) {
-    background: ${theme.colors.blueLight};
+    background: ${theme.colors.blue};
   }
 
   &:nth-child(3) {

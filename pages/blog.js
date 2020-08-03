@@ -9,6 +9,7 @@ const blog = () => {
 
       <Section bg='purple'>
         <h1>Blog</h1>
+        <p>coming soon</p>
       </Section>
 
       <Footer />

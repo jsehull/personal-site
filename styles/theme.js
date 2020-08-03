@@ -1,9 +1,9 @@
 module.exports = {
   colors: {
-    black: 'rgba(33, 33, 33, 0.8)',
-    blackHeader: 'rgba(33, 33, 33, 0.75)',
-    blueLight: '#e0ffff',
-    blueMedium: '#add8e6', // underlines
+    black: 'rgba(33, 33, 33, 0.85)',
+    blackHeader: 'rgba(33, 33, 33, 0.8)',
+    blue: '#e0ffff',
+    blueLines: '#add8e6', // underlines
     green: '#c7ffc7',
     purple: '#e6e6fa',
     yellow: '#ffffe0'
