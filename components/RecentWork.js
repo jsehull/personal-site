@@ -21,7 +21,7 @@ const Flex = styled.div`
   justify-content: center;
   align-items: flex-start;
 
-  @media (min-width: 700px) {
+  @media (min-width: 750px) {
     flex-direction: row;
   }
 `

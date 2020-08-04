@@ -1,33 +1,7 @@
-# Next.js Site Starter
+# [jsehull.com](http://jsehull.com)
 
-- Next.js v9.4 (fast reloads + SSG compatible)
-- Created to speed up personal project creation
+Welcome to my personal website! This site is a platform for my activity and writings. Hopefully something here inspires you 😃
 
-## Included
+Built through React with the help of Next.js, Emotion, some emotions, and Netlify CMS.
 
-- responsive defaults
-- header (name/logo + nav)
-- 5 linked pages
-- footer with links
-- starter `global-styles.js` + `theme.js`
-- 👷‍♂️ construction favicon to ward off OSHA
-
-## Get started
-
-Run your server:
-
-```
-npm run dev
-# or
-yarn dev
-```
-
-Open with [http://localhost:3000](http://localhost:3000)
-
-## Dependencies
-
-- **Docs** with [Next.js](https://nextjs.org/docs/)
-- **Linter** with [Standard JS](https://standardjs.com/)
-- **Style** with [Emotion](https://emotion.sh/docs/introduction)
-
-\*\*`.prettierignore` included for use w/[Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) VSCode plugin
+Design thoughts shared on [/about](http://jsehull.com/about)
