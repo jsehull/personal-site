@@ -9,7 +9,7 @@ const Index = () => {
     <>
       <Head>
         <title>Jesse Hull</title>
-        <link rel='icon' href='/favicon.ico' />
+        <link rel='icon' href='/images/favicon.ico' />
         <link
           href='https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap'
           rel='stylesheet'

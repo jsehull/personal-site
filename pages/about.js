@@ -2,6 +2,7 @@ import styled from '@emotion/styled'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import Section from '../components/Section'
+import theme from '../styles/theme'
 
 const Bullets = styled.div`
   display: flex;
@@ -22,6 +23,26 @@ const Article = styled.article`
   }
   &:last-child {
     margin-bottom: 0;
+  }
+`
+
+const Honor = styled.div``
+
+const ImageBox = styled.div`
+  width: 100%;
+  text-align: center;
+
+  img {
+    width: 300px;
+  }
+`
+
+const TextBox = styled.div`
+  padding-left: 20px;
+  border-left: 8px solid ${theme.colors.blueLines};
+
+  p {
+    font-style: italic;
   }
 `
 
@@ -49,6 +70,16 @@ const about = () => {
             tech-industry folk, we know how valuable balance and perspective is
             away from the screen, so we can think more clearly at it. Mountain
             air be good for ya ha.
+          </p>
+          <p>
+            More on my{' '}
+            <a
+              href='/docs/jesse-hull-resume-2020.pdf'
+              target='_blank'
+              rel='noopener noreferrer'>
+              resume
+            </a>
+            .
           </p>
         </Article>
 
@@ -120,6 +151,34 @@ const about = () => {
               <li>HipChat</li>
             </ul>
           </Bullets>
+        </Article>
+
+        <Article>
+          <h2>Recent honors</h2>
+          <Honor>
+            <h3>BNI departure</h3>
+            <ImageBox>
+              <img src='/images/site/bni-bold.jpeg' alt='Boldness' />
+            </ImageBox>
+            <TextBox>
+              <p>
+                As President of BNI Synergistic Solutions, Jesse recognized
+                opportunities to energize the chapter. He reached out to new
+                members or visitors to welcome them and make sure they have what
+                they need to succeed. He encouraged them to attend Member
+                Success Program as quickly as possible. Jesse found
+                opportunities to personally improve. He took on important tasks
+                that needed to be done and followed through with determined
+                steps of action.
+              </p>
+              <p>
+                Our chapter benefited from his positive boldness. He brought
+                enthusiasm, affirmed the value of each member and sought to help
+                the chapter to increase in size so that all members could
+                benefit. Thank you, Jesse, for your efforts!
+              </p>
+            </TextBox>
+          </Honor>
         </Article>
 
         <Article>

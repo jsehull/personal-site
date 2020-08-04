@@ -23,7 +23,7 @@ const StyledFooter = styled.footer`
       background: none;
 
       svg {
-        fill: ${theme.colors.blueMedium};
+        fill: ${theme.colors.blueLines};
       }
     }
   }
@@ -95,6 +95,26 @@ const Footer = () => {
             strokeLinecap='round'
             strokeLinejoin='round'>
             <path d='M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z' />
+          </svg>
+        </a>
+        <a
+          href='/docs/jesse-hull-resume-2020.pdf'
+          target='_blank'
+          rel='noopener noreferrer'>
+          <svg
+            width='24'
+            height='24'
+            viewBox='0 0 24 24'
+            fill='none'
+            stroke='currentColor'
+            strokeWidth='2'
+            strokeLinecap='round'
+            strokeLinejoin='round'>
+            <path d='M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z' />
+            <polyline points='14 2 14 8 20 8' />
+            <line x1='16' y1='13' x2='8' y2='13' />
+            <line x1='16' y1='17' x2='8' y2='17' />
+            <polyline points='10 9 9 9 8 9' />
           </svg>
         </a>
       </div>

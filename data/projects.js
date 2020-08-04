@@ -46,7 +46,7 @@ export const professional = [
     tags: 'Remote, React, Next.js, Emotion',
     description:
       "Let's put a pin in that level the playing field clear blue water run it up the flag pole talk to the slides cross functional teams enable out of the box brainstorming but per my previous email. Pivot run it up the flag pole put a record on and see who dances. Streamline not the long pole in my tent, but deliverables. Minimize backwards overflow. Digitalize.",
-    thumbnail: '/images/work/giyg.png',
+    thumbnail: '/images/site/giyg.png',
     siteURL: 'https://godinyourgarden.com/'
   },
   {
@@ -55,7 +55,7 @@ export const professional = [
     tags: 'Fullstack (JavaScript, Laravel, MySQL, Sass)',
     description:
       "Let's put a pin in that level the playing field clear blue water run it up the flag pole talk to the slides cross functional teams enable out of the box brainstorming but per my previous email. Pivot run it up the flag pole put a record on and see who dances. Streamline not the long pole in my tent, but deliverables. Minimize backwards overflow. Digitalize.",
-    thumbnail: '/images/work/tms.png',
+    thumbnail: '/images/site/tms.png',
     siteURL: 'https://www.totalmortgage.com/'
   },
   {
@@ -64,7 +64,7 @@ export const professional = [
     tags: 'Remote, JavaScript, Sass, HTML',
     description:
       "Let's put a pin in that level the playing field clear blue water run it up the flag pole talk to the slides cross functional teams enable out of the box brainstorming but per my previous email. Pivot run it up the flag pole put a record on and see who dances. Streamline not the long pole in my tent, but deliverables. Minimize backwards overflow. Digitalize.",
-    thumbnail: '/images/work/ductz.png',
+    thumbnail: '/images/site/ductz.png',
     siteURL: 'https://www.ductzofmidmichigan.com/'
   }
 ]
