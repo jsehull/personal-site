@@ -13,12 +13,13 @@ module.exports = {
     dashedTwoPx: '2px dashed #add8e6',
     solidOnePx: '1px solid #add8e6',
     solidTwoPx: '2px solid #add8e6',
+    shadow: '10px 10px 0px -5px #add8e6',
     widthDesktop: '800px'
   }
 }
 
 // lightcyan - #e0ffff
-// custom - #c7ffc7
+// custom green - #c7ffc7
 // lightyellow - #ffffe0
 // lavender - #e6e6fa
 // lightblue - #add8e6

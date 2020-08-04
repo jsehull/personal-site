@@ -1,4 +1,5 @@
 import styled from '@emotion/styled'
+import theme from '../styles/theme'
 import { personal, professional } from '../data/projects'
 
 const ProjectContainer = styled.div`
@@ -36,7 +37,7 @@ const ImageBox = styled.div`
 
   img {
     width: ${props => (props.data === 'personal' ? '100px' : '300px')};
-    box-shadow: 10px 10px 0px -5px #add8e6;
+    box-shadow: ${theme.misc.shadow};
   }
 `
 

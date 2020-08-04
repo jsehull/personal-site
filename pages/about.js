@@ -34,6 +34,7 @@ const ImageBox = styled.div`
 
   img {
     width: 300px;
+    box-shadow: ${theme.misc.shadow};
   }
 `
 
