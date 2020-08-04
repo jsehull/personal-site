@@ -45,7 +45,7 @@ export const professional = [
     name: 'God in Your Garden',
     tags: 'Remote, React, Next.js, Emotion',
     description:
-      "Let's put a pin in that level the playing field clear blue water run it up the flag pole talk to the slides cross functional teams enable out of the box brainstorming but per my previous email. Pivot run it up the flag pole put a record on and see who dances. Streamline not the long pole in my tent, but deliverables. Minimize backwards overflow. Digitalize.",
+      "Static website created for book release of independent author. Design is original and inspired by the publisher's cover art materials. Several meetings with client to update content or pivot from initial goals.",
     thumbnail: '/images/site/giyg.png',
     siteURL: 'https://godinyourgarden.com/'
   },
@@ -54,7 +54,7 @@ export const professional = [
     name: 'Total Mortgage Services',
     tags: 'Fullstack (JavaScript, Laravel, MySQL, Sass)',
     description:
-      "Let's put a pin in that level the playing field clear blue water run it up the flag pole talk to the slides cross functional teams enable out of the box brainstorming but per my previous email. Pivot run it up the flag pole put a record on and see who dances. Streamline not the long pole in my tent, but deliverables. Minimize backwards overflow. Digitalize.",
+      'Primary front-end builder for new company website. Known for attention to detail with designs and layouts. Partnered with marketing on smaller projects.',
     thumbnail: '/images/site/tms.png',
     siteURL: 'https://www.totalmortgage.com/'
   },
@@ -63,7 +63,7 @@ export const professional = [
     name: 'DUCTZ of Mid Michigan',
     tags: 'Remote, JavaScript, Sass, HTML',
     description:
-      "Let's put a pin in that level the playing field clear blue water run it up the flag pole talk to the slides cross functional teams enable out of the box brainstorming but per my previous email. Pivot run it up the flag pole put a record on and see who dances. Streamline not the long pole in my tent, but deliverables. Minimize backwards overflow. Digitalize.",
+      'Built modern website. Substantially increased sales after going from a rather bloated and sterile look, to a clear and effective user experience. Authored new content and removed corporate doublespeak.',
     thumbnail: '/images/site/ductz.png',
     siteURL: 'https://www.ductzofmidmichigan.com/'
   }
