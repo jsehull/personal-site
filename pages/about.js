@@ -36,7 +36,7 @@ const TextBox = styled.div`
 
 const about = () => {
   return (
-    <Layout title='About - Jesse Hull'>
+    <Layout pageTitle='About - Jesse Hull'>
       <Section bg='yellow'>
         <Article>
           <h1>About me</h1>

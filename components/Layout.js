@@ -2,11 +2,11 @@ import Head from 'next/head'
 import Header from './Header'
 import Footer from './Footer'
 
-const Layout = ({ children, title = 'Jesse Hull' }) => {
+const Layout = ({ children, pageTitle = 'Jesse Hull', ...props }) => {
   return (
-    <div>
+    <>
       <Head>
-        <title>{title}</title>
+        <title>{pageTitle}</title>
         <meta charSet='utf-8' />
         <meta name='viewport' content='initial-scale=1.0, width=device-width' />
         <link rel='icon' href='/images/favicon.ico' />
@@ -15,13 +15,10 @@ const Layout = ({ children, title = 'Jesse Hull' }) => {
           rel='stylesheet'
         />
       </Head>
-
       <Header />
-
       {children}
-
       <Footer />
-    </div>
+    </>
   )
 }
 
