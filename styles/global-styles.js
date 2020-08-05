@@ -26,7 +26,7 @@ const globalStyles = css`
 
   h1,
   h2 {
-    margin: 0 auto 10px;
+    margin: 0 auto 1em;
     border-bottom: ${theme.misc.solidTwoPx};
   }
 

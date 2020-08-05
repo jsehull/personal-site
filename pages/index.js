@@ -1,6 +1,6 @@
 import Layout from '../components/Layout'
 import Section from '../components/Section'
-import BlogLatest from '../components/BlogLatest'
+import FeaturedPosts from '../components/FeaturedPosts'
 import RecentWork from '../components/RecentWork'
 
 const Index = () => {
@@ -18,8 +18,8 @@ const Index = () => {
       </Section>
 
       <Section bg='purple'>
-        <h2>Latest articles</h2>
-        <BlogLatest />
+        <h2>Latest posts</h2>
+        <FeaturedPosts />
       </Section>
 
       <Section bg='blue'>

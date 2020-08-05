@@ -8,13 +8,23 @@ import Layout from '../../components/Layout'
 import Section from '../../components/Section'
 
 const FrontmatterBox = styled.div`
+  h1 {
+    margin-bottom: 0.25em;
+  }
   p {
     margin-top: 0;
+    font-size: 0.9em;
+    font-weight: bold;
   }
 `
 
 const PostBox = styled.div`
   margin: 2em 0 3em;
+
+  a {
+    font-size: 0.9em;
+    font-weight: bold;
+  }
 `
 
 const PostFooter = styled.div`
@@ -22,11 +32,11 @@ const PostFooter = styled.div`
   border-top: ${theme.misc.solidTwoPx};
 `
 
-export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
+const BlogPost = ({ siteTitle, frontmatter, markdownBody }) => {
   if (!frontmatter) return <></>
 
   return (
-    <Layout pageTitle={`${siteTitle} | ${frontmatter.title}`}>
+    <Layout pageTitle={`${frontmatter.title} | Jesse Hull`}>
       <Section bg='purple'>
         <article>
           <FrontmatterBox>
@@ -48,6 +58,8 @@ export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
     </Layout>
   )
 }
+
+export default BlogPost
 
 export async function getStaticProps({ ...ctx }) {
   const { postname } = ctx.params
@@ -83,30 +95,3 @@ export async function getStaticPaths() {
     fallback: false
   }
 }
-
-// const SummaryBox = styled.div`
-//   margin: 2em auto;
-
-//   &:last-child {
-//     margin-bottom: 0;
-//   }
-
-//   h3 {
-//     margin: 0 0 0.75em;
-//     font-style: italic;
-//   }
-// `
-
-//       <Section bg='purple'>
-//         <h2>All posts</h2>
-//         <SummaryBox>
-//           <h3>The WET Codebase</h3>
-//           <p>July 13, 2020 • ☕️ 1 min read</p>
-//           <p>Come waste your time with me.</p>
-//         </SummaryBox>
-//         <SummaryBox>
-//           <h3>The WET Codebase</h3>
-//           <p>July 13, 2020 • ☕️ 1 min read</p>
-//           <p>Come waste your time with me.</p>
-//         </SummaryBox>
-//       </Section>

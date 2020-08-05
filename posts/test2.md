@@ -1,7 +1,7 @@
 ---
-title: 'Hello world'
+title: 'Test 2 has a longer name here'
 publishedOn: '2020-08-05'
-summary: 'My first post after setting up Markdown capabilities'
+summary: 'Test for a longer name and thus, longer description'
 author: 'Jesse Hull'
 ---
 
@@ -13,23 +13,10 @@ This is officially one of the rare shoutouts embeded in a `hello-world.file` bur
 
 ### Section test
 
-My next goal is to plug in _Netlify CMS_ and give the **draft + review + publish** setup a try. I DO like typing in Markdown, but I know I can do it there too. We'll see how it goes!
-
-Trying to adjust CSS as I go...still other things to do yet!
+Can we barter services? the flier should feel like a warm handshake, but we are a startup could you solutionize that for me. That will be a conversation piece can you punch up the fun level on these icons could you move it a tad to the left this is just a 5 minutes job.
 
 - Beats
 - Bears
 - Battlestar Galactica
 
-> Line quote
-
-`inline code reference`
-
-```
-code block
-area
-```
-
 You are lucky to even be doing this for us can you make it pop I really think this could go viral.
-
-Ipsum can be fun.

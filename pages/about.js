@@ -140,7 +140,7 @@ const about = () => {
         </Article>
 
         <Article>
-          <h2>Site inspiration 📝</h2>
+          <h2>Site inspiration</h2>
           <p>
             This website is based off memories from my elementary school days.
           </p>
