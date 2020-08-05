@@ -2,6 +2,10 @@ import styled from '@emotion/styled'
 
 const Title = styled.h3`
   font-style: italic;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 `
 
 const BlogLatest = () => {

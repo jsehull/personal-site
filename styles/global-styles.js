@@ -9,6 +9,7 @@ const globalStyles = css`
   body {
     margin: 0;
     padding: 0;
+    background: ${theme.colors.green};
     color: ${theme.colors.black};
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
       Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
