@@ -1,6 +1,5 @@
 import styled from '@emotion/styled'
-import Header from '../components/Header'
-import Footer from '../components/Footer'
+import Layout from '../components/Layout'
 import Section from '../components/Section'
 import theme from '../styles/theme'
 
@@ -26,18 +25,6 @@ const Article = styled.article`
   }
 `
 
-const Honor = styled.div``
-
-const ImageBox = styled.div`
-  width: 100%;
-  text-align: center;
-
-  img {
-    width: 300px;
-    box-shadow: ${theme.misc.shadow};
-  }
-`
-
 const TextBox = styled.div`
   padding-left: 20px;
   border-left: 8px solid ${theme.colors.blueLines};
@@ -49,9 +36,7 @@ const TextBox = styled.div`
 
 const about = () => {
   return (
-    <>
-      <Header />
-
+    <Layout title='About - Jesse Hull'>
       <Section bg='yellow'>
         <Article>
           <h1>About me</h1>
@@ -155,34 +140,6 @@ const about = () => {
         </Article>
 
         <Article>
-          <h2>Recent honors</h2>
-          <Honor>
-            <h3>BNI departure</h3>
-            <ImageBox>
-              <img src='/images/site/bni-bold.jpeg' alt='Boldness' />
-            </ImageBox>
-            <TextBox>
-              <p>
-                As President of BNI Synergistic Solutions, Jesse recognized
-                opportunities to energize the chapter. He reached out to new
-                members or visitors to welcome them and make sure they have what
-                they need to succeed. He encouraged them to attend Member
-                Success Program as quickly as possible. Jesse found
-                opportunities to personally improve. He took on important tasks
-                that needed to be done and followed through with determined
-                steps of action.
-              </p>
-              <p>
-                Our chapter benefited from his positive boldness. He brought
-                enthusiasm, affirmed the value of each member and sought to help
-                the chapter to increase in size so that all members could
-                benefit. Thank you, Jesse, for your efforts!
-              </p>
-            </TextBox>
-          </Honor>
-        </Article>
-
-        <Article>
           <h2>Site inspiration 📝</h2>
           <p>
             This website is based off memories from my elementary school days.
@@ -199,9 +156,7 @@ const about = () => {
           <p>More in-depth blog otw...</p>
         </Article>
       </Section>
-
-      <Footer />
-    </>
+    </Layout>
   )
 }
 

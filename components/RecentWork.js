@@ -45,10 +45,12 @@ const TextBox = styled.div`
   flex: ${props => (props.data === 'personal' ? 2 : 1)};
   width: 100%;
 
-  @media (min-width: 700px) {
+  @media (min-width: 750px) {
     p {
       margin-top: 0;
     }
+
+    margin-left: ${props => (props.data === 'personal' ? '10px' : 0)};
   }
 `
 
@@ -78,25 +80,25 @@ const RecentWork = ({ data }) => {
               <img src={repo.thumbnail} alt={`${repo.name} website`} />
             </ImageBox>
             <TextBox data={data}>
-              {professional ? <Tags>{repo.tags}</Tags> : null}
+              {repo.tags && <Tags>{repo.tags}</Tags>}
               <p>{repo.description}</p>
               <LinkBox>
-                {repo.siteURL ? (
+                {repo.siteURL && (
                   <a
                     href={repo.siteURL}
                     target='_blank'
                     rel='noopener noreferrer'>
                     view LIVE
                   </a>
-                ) : null}
-                {repo.codeURL ? (
+                )}
+                {repo.codeURL && (
                   <a
                     href={repo.codeURL}
                     target='_blank'
                     rel='noopener noreferrer'>
                     view CODE
                   </a>
-                ) : null}
+                )}
               </LinkBox>
             </TextBox>
           </Flex>

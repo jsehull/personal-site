@@ -1,20 +1,15 @@
-import Header from '../components/Header'
-import Footer from '../components/Footer'
+import Layout from '../components/Layout'
 import Section from '../components/Section'
 import RecentWork from '../components/RecentWork'
 
 const projects = () => {
   return (
-    <>
-      <Header />
-
+    <Layout title='Work - Jesse Hull'>
       <Section bg='blue'>
         <h1>Developer Experience</h1>
         <RecentWork data='work' />
       </Section>
-
-      <Footer />
-    </>
+    </Layout>
   )
 }
 
