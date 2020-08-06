@@ -18,7 +18,7 @@ const Index = () => {
       </Section>
 
       <Section bg='purple'>
-        <h2>Latest posts</h2>
+        <h2>Featured posts</h2>
         <FeaturedPosts />
       </Section>
 

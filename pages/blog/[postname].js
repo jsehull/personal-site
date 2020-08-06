@@ -8,6 +8,7 @@ import Layout from '../../components/Layout'
 import Section from '../../components/Section'
 
 const FrontmatterBox = styled.div`
+  text-align: center;
   h1 {
     margin-bottom: 0.25em;
   }
@@ -15,6 +16,9 @@ const FrontmatterBox = styled.div`
     margin-top: 0;
     font-size: 0.9em;
     font-weight: bold;
+  }
+
+  img {
   }
 `
 
@@ -44,6 +48,7 @@ const BlogPost = ({ siteTitle, frontmatter, markdownBody }) => {
             <p>
               By {frontmatter.author} - {frontmatter.publishedOn}
             </p>
+            {frontmatter.hero_image && <img src={frontmatter.hero_image} />}
           </FrontmatterBox>
           <PostBox>
             <ReactMarkdown source={markdownBody} />

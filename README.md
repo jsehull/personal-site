@@ -5,7 +5,6 @@ Welcome to my personal website! This site is a platform for my activity and writ
 Built with:
 
 - [Next.js](https://nextjs.org/docs/)
-- [Netlify CMS](https://www.netlifycms.org/)
 - [Standard JS](https://standardjs.com/)
 - [Emotion](https://emotion.sh/docs/introduction)
 - some emotions 😅
