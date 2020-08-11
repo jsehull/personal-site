@@ -1,7 +1,6 @@
 import styled from '@emotion/styled'
 import Layout from '../components/Layout'
 import Section from '../components/Section'
-import theme from '../styles/theme'
 
 const Bullets = styled.div`
   display: flex;
@@ -22,15 +21,6 @@ const Article = styled.article`
   }
   &:last-child {
     margin-bottom: 0;
-  }
-`
-
-const TextBox = styled.div`
-  padding-left: 20px;
-  border-left: 8px solid ${theme.colors.blueLines};
-
-  p {
-    font-style: italic;
   }
 `
 
@@ -62,7 +52,8 @@ const about = () => {
             <a
               href='/docs/jesse-hull-resume-2020.pdf'
               target='_blank'
-              rel='noopener noreferrer'>
+              rel='noopener noreferrer'
+            >
               resume
             </a>
             .

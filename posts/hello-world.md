@@ -1,7 +1,7 @@
 ---
 title: 'Hello world'
 author: 'Jesse Hull'
-publishedOn: '2020-08-05'
+date: '2020-08-05'
 summary: 'My first post after setting up Markdown capabilities'
 hero_image: ../static/hellow-world.png
 ---
