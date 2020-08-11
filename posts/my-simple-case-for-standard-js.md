@@ -1,5 +1,5 @@
 ---
-title: 'The Case for Standard JS'
+title: 'My Simple Case for Standard JS'
 author: 'Jesse Hull'
 date: '2020-08-10'
 summary: 'How I ended up using Standard JS for my personal projects'
