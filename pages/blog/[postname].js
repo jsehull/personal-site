@@ -46,7 +46,7 @@ const BlogPost = ({ siteTitle, frontmatter, markdownBody }) => {
           <FrontmatterBox>
             <h1>{frontmatter.title}</h1>
             <p>
-              By {frontmatter.author} - {frontmatter.publishedOn}
+              By {frontmatter.author} - {frontmatter.date}
             </p>
             {frontmatter.hero_image && <img src={frontmatter.hero_image} />}
           </FrontmatterBox>
@@ -70,33 +70,33 @@ export async function getStaticProps({ ...ctx }) {
   const { postname } = ctx.params
 
   const content = await import(`../../posts/${postname}.md`)
-  const config = await import(`../../siteconfig.json`)
+  const config = await import('../../siteconfig.json')
   const data = matter(content.default)
 
   return {
     props: {
       siteTitle: config.title,
       frontmatter: data.data,
-      markdownBody: data.content
-    }
+      markdownBody: data.content,
+    },
   }
 }
 
 export async function getStaticPaths() {
-  const blogSlugs = (context => {
+  const blogSlugs = ((context) => {
     const keys = context.keys()
     const data = keys.map((key, index) => {
-      let slug = key.replace(/^.*[\\\/]/, '').slice(0, -3)
+      const slug = key.replace(/^.*[\\\/]/, '').slice(0, -3)
 
       return slug
     })
     return data
   })(require.context('../../posts', true, /\.md$/))
 
-  const paths = blogSlugs.map(slug => `/blog/${slug}`)
+  const paths = blogSlugs.map((slug) => `/blog/${slug}`)
 
   return {
     paths,
-    fallback: false
+    fallback: false,
   }
 }
