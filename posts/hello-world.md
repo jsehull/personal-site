@@ -2,8 +2,8 @@
 title: 'Hello world'
 author: 'Jesse Hull'
 date: '2020-08-05'
-summary: 'My first post after setting up Markdown capabilities'
-hero_image: ../static/hellow-world.png
+summary: 'My first post after setting up Markdown capabilities.'
+hero_image: ../static/images/hello-world/banner.png
 ---
 
 Shout out to [@cassidoo](https://twitter.com/cassidoo) for her tutorial on [setting up a markdown blog w/Netlify and Next.js](https://www.netlify.com/blog/2020/05/04/building-a-markdown-blog-with-next-9.4-and-netlify/).

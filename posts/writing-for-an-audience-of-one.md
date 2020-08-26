@@ -3,7 +3,7 @@ title: 'Writing for an Audience of One'
 author: 'Jesse Hull'
 date: '2020-08-05'
 summary: 'Discovering my vision and drive for this new season of writing.'
-hero_image: ../static/audience-of-one.png
+hero_image: ../static/images/writing-for-an-audience-of-one/banner.png
 ---
 
 Is this even worth it?
