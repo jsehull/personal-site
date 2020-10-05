@@ -12,6 +12,7 @@ const FrontmatterBox = styled.div`
   h1 {
     margin-bottom: 0.25em;
   }
+
   p {
     margin-top: 0;
     font-size: 0.9em;
@@ -19,11 +20,17 @@ const FrontmatterBox = styled.div`
   }
 
   img {
+    max-width: 600px;
   }
 `
 
 const PostBox = styled.div`
   margin: 2em 0 3em;
+
+  h2 {
+    margin: 1.25em 0;
+    border-bottom: ${theme.misc.dashedTwoPx};
+  }
 
   a {
     font-size: 0.9em;
@@ -77,13 +84,13 @@ export async function getStaticProps({ ...ctx }) {
     props: {
       siteTitle: config.title,
       frontmatter: data.data,
-      markdownBody: data.content,
-    },
+      markdownBody: data.content
+    }
   }
 }
 
 export async function getStaticPaths() {
-  const blogSlugs = ((context) => {
+  const blogSlugs = (context => {
     const keys = context.keys()
     const data = keys.map((key, index) => {
       const slug = key.replace(/^.*[\\\/]/, '').slice(0, -3)
@@ -93,10 +100,10 @@ export async function getStaticPaths() {
     return data
   })(require.context('../../posts', true, /\.md$/))
 
-  const paths = blogSlugs.map((slug) => `/blog/${slug}`)
+  const paths = blogSlugs.map(slug => `/blog/${slug}`)
 
   return {
     paths,
-    fallback: false,
+    fallback: false
   }
 }

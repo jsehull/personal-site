@@ -9,6 +9,10 @@ const Layout = ({ children, pageTitle = 'Jesse Hull', ...props }) => {
         <title>{pageTitle}</title>
         <meta charSet='utf-8' />
         <meta name='viewport' content='initial-scale=1.0, width=device-width' />
+        <meta
+          name='description'
+          content="Front end developer. Here you'll see some recent projects and be able to read what I'm learning in my professional journey."
+        />
         <link rel='icon' href='/images/favicon.ico' />
         <link
           href='https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap'
