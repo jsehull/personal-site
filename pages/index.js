@@ -9,7 +9,7 @@ const Index = () => {
       <Section bg='yellow'>
         <h1>Hey, I'm Jesse</h1>
         <p>
-          I'm a <b>Front-End Developer</b> and I live in Colorado 🏔.
+          I'm a <b>Front-End Developer (React)</b> and I live in Colorado 🏔.
         </p>
         <p>
           Currently looking for <b>remote work</b> with a team that understands{' '}
