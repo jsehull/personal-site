@@ -18,6 +18,8 @@ const Layout = ({
         <meta name='twitter:card' content='summary_large_image' />
         <meta name='twitter:site' content='@jsehull' />
         <meta name='twitter:creator' content='@jsehull' />
+        <meta name='twitter:title' content={pageTitle} />
+        <meta name='twitter:description' content={summary} />
         <link rel='icon' href='/images/favicon.ico' />
         <link
           href='https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap'
