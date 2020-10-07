@@ -48,7 +48,10 @@ const BlogPost = ({ siteTitle, frontmatter, markdownBody }) => {
   if (!frontmatter) return <></>
 
   return (
-    <Layout pageTitle={`${frontmatter.title} | Jesse Hull`}>
+    <Layout
+      pageTitle={`${frontmatter.title} | Jesse Hull`}
+      summary={frontmatter.summary}
+    >
       <Section bg='purple'>
         <article>
           <FrontmatterBox>
