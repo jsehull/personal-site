@@ -3,7 +3,7 @@ title: 'My Simple Case for Standard JS'
 author: 'Jesse Hull'
 date: '2020-08-10'
 summary: 'How I ended up using Standard JS for my personal projects.'
-hero_image: ../static/images/my-simple-case-for-standard-js/banner.png
+banner: /static/images/my-simple-case-for-standard-js/banner.png
 ---
 
 When working on projects recently, I started doing some comparisons for linters and for using some sort of formatter. Obviously, [ESLint](https://eslint.org/) is still top of the pile and [Prettier](https://prettier.io/) is pretty sound.

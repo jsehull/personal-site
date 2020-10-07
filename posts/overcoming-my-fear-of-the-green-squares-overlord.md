@@ -3,7 +3,7 @@ title: 'Overcoming My Fear of the Green Squares Overlord'
 author: 'Jesse Hull'
 date: '2020-10-06'
 summary: 'Defining my success and progress by more than what is quantified to the public'
-hero_image: ../static/images/overcoming-my-fear-of-the-green-squares-overlord/banner.png
+banner: /static/images/overcoming-my-fear-of-the-green-squares-overlord/banner.png
 ---
 
 I put a lot of effort over the years into learning web development. The sources I have used have ranged from courses, projects, on the job learning, to reading different blogs and educational materials.

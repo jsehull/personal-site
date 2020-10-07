@@ -51,6 +51,7 @@ const BlogPost = ({ siteTitle, frontmatter, markdownBody }) => {
     <Layout
       pageTitle={`${frontmatter.title} | Jesse Hull`}
       summary={frontmatter.summary}
+      banner={frontmatter.banner}
     >
       <Section bg='purple'>
         <article>
@@ -59,7 +60,7 @@ const BlogPost = ({ siteTitle, frontmatter, markdownBody }) => {
             <p>
               By {frontmatter.author} - {frontmatter.date}
             </p>
-            {frontmatter.hero_image && <img src={frontmatter.hero_image} />}
+            {frontmatter.banner && <img src={frontmatter.banner} />}
           </FrontmatterBox>
           <PostBox>
             <ReactMarkdown source={markdownBody} />
