@@ -59,10 +59,12 @@ const Tags = styled.p`
 `
 
 const LinkBox = styled.div`
-  a {
-    &:first-child {
-      margin-right: 30px;
-    }
+  a:first-child {
+    margin-right: 30px;
+  }
+
+  p {
+    font-style: italic;
   }
 `
 
@@ -83,19 +85,23 @@ const RecentWork = ({ data }) => {
               {repo.tags && <Tags>{repo.tags}</Tags>}
               <p>{repo.description}</p>
               <LinkBox>
-                {repo.siteURL && (
+                {repo.siteURL ? (
                   <a
                     href={repo.siteURL}
                     target='_blank'
-                    rel='noopener noreferrer'>
+                    rel='noopener noreferrer'
+                  >
                     view LIVE
                   </a>
+                ) : (
+                  <p>{repo.siteActive}</p>
                 )}
                 {repo.codeURL && (
                   <a
                     href={repo.codeURL}
                     target='_blank'
-                    rel='noopener noreferrer'>
+                    rel='noopener noreferrer'
+                  >
                     view CODE
                   </a>
                 )}
