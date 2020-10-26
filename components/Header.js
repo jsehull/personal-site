@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import styled from '@emotion/styled'
 import theme from '../styles/theme'
 
@@ -9,7 +8,6 @@ const StyledHeader = styled.header`
 
   a {
     font-weight: bold;
-    border-bottom: none;
   }
 `
 
@@ -26,6 +24,7 @@ const NavLogo = styled.a`
   margin: 0;
   font-size: 1.5em;
   font-weight: bold;
+  border-bottom: none;
 
   &:hover {
     cursor: pointer;
@@ -33,7 +32,7 @@ const NavLogo = styled.a`
   }
 `
 
-const NavBar = styled.ul`
+const NavBar = styled.div`
   margin: 0;
   padding: 0;
   display: flex;
@@ -42,7 +41,7 @@ const NavBar = styled.ul`
   list-style: none;
 `
 
-const Li = styled.li`
+const NavLink = styled.a`
   margin: 0;
   margin-right: 10px;
   padding: 5px 7px;
@@ -72,38 +71,21 @@ const Li = styled.li`
     padding: 5px 10px;
     font-size: 0.9em;
   }
+
   @media (min-width: 950px) {
     padding: 10px;
     font-size: 1em;
-  }
-
-  a:hover {
-    background: transparent;
   }
 `
 
 const Header = () => (
   <StyledHeader>
     <FlexContainer>
-      <Link href='/'>
-        <NavLogo>jsehull</NavLogo>
-      </Link>
+      <NavLogo href='/'>jsehull</NavLogo>
       <NavBar>
-        <Link href='/about'>
-          <Li>
-            <a>About</a>
-          </Li>
-        </Link>
-        <Link href='/work'>
-          <Li>
-            <a>Work</a>
-          </Li>
-        </Link>
-        <Link href='/blog'>
-          <Li>
-            <a>Blog</a>
-          </Li>
-        </Link>
+        <NavLink href='/about'>About</NavLink>
+        <NavLink href='/work'>Work</NavLink>
+        <NavLink href='/blog'>Blog</NavLink>
       </NavBar>
     </FlexContainer>
   </StyledHeader>

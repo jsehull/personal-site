@@ -94,7 +94,7 @@ const RecentWork = ({ data }) => {
                     view LIVE
                   </a>
                 ) : (
-                  <p>{repo.siteActive}</p>
+                  <p>{repo.siteInactive}</p>
                 )}
                 {repo.codeURL && (
                   <a

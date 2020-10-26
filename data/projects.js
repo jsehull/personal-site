@@ -66,6 +66,6 @@ export const professional = [
       'Built modern website. Substantially increased sales after going from a rather bloated and sterile look, to a clear and effective user experience. Authored new content and removed corporate doublespeak.',
     thumbnail: '/images/site/ductz.png',
     siteURL: '',
-    siteActive: 'Active Summer 2016 - Fall 2020'
+    siteInactive: 'Active Summer 2016 - Fall 2020'
   }
 ]
