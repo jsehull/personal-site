@@ -1,6 +1,7 @@
 import styled from '@emotion/styled'
 import theme from '../styles/theme'
 import { personal, professional } from '../data/projects'
+import Image from 'next/image'
 
 const ProjectContainer = styled.div`
   display: ${props => (props.data === 'personal' ? 'flex' : 'block')};
@@ -34,11 +35,8 @@ const ImageBox = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  img {
-    width: ${props => (props.data === 'personal' ? '100px' : '300px')};
-    box-shadow: ${theme.misc.shadow};
-  }
+  max-width: ${props => (props.data === 'personal' ? '100px' : '300px')};
+  box-shadow: ${theme.misc.shadow};
 `
 
 const TextBox = styled.div`
@@ -50,7 +48,7 @@ const TextBox = styled.div`
       margin-top: 0;
     }
 
-    margin-left: ${props => (props.data === 'personal' ? '10px' : 0)};
+    margin-left: ${props => (props.data === 'personal' ? '10px' : '25px')};
   }
 `
 
@@ -79,7 +77,12 @@ const RecentWork = ({ data }) => {
           <h3>{repo.name}</h3>
           <Flex>
             <ImageBox data={data}>
-              <img src={repo.thumbnail} alt={`${repo.name} website`} />
+              <Image
+                src={repo.thumbnail}
+                alt={`${repo.name} website`}
+                width={repo.width}
+                height={repo.height}
+              />
             </ImageBox>
             <TextBox data={data}>
               {repo.tags && <Tags>{repo.tags}</Tags>}

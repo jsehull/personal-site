@@ -5,6 +5,8 @@ export const personal = [
     description: '🛠 A personal project starter using Next.js',
     thumbnail:
       'https://raw.githubusercontent.com/jsehull/nextjs-site-starter/master/public/images/github-preview.png',
+    width: 280,
+    height: 428,
     codeURL: 'https://github.com/jsehull/nextjs-site-starter',
     siteURL: 'https://nextjs-site-starter-3595a3.netlify.app/'
   },
@@ -15,6 +17,8 @@ export const personal = [
       '🛒 React Router, React Hooks (useState, useEffect, useContext), PropTypes',
     thumbnail:
       'https://raw.githubusercontent.com/jsehull/cra-ecommerce/master/github-preview.png',
+    width: 280,
+    height: 500,
     codeURL: 'https://github.com/jsehull/cra-ecommerce',
     siteURL: 'https://cra-ecommerce-0a759b.netlify.app/'
   },
@@ -25,6 +29,8 @@ export const personal = [
       '⌨ CRA + React hooks (useState, useEffect, useRef, useContext)',
     thumbnail:
       'https://raw.githubusercontent.com/jsehull/speed-typing/master/src/github-preview.png',
+    width: 246,
+    height: 434,
     codeURL: 'https://github.com/jsehull/speed-typing',
     siteURL: 'https://speed-typing-5a2501.netlify.app/'
   },
@@ -34,6 +40,8 @@ export const personal = [
     description: '🕹 vanilla JS, memory game, turn logic',
     thumbnail:
       'https://raw.githubusercontent.com/jsehull/disco-tussle/master/images/github-preview.png',
+    width: 277,
+    height: 605,
     codeURL: 'https://github.com/jsehull/disco-tussle',
     siteURL: 'https://disco-tussle.netlify.app/'
   }
@@ -47,6 +55,8 @@ export const professional = [
     description:
       "Static website created for book release of independent author. Design is original and inspired by the publisher's cover art materials. Several meetings with client to update content or pivot from initial goals.",
     thumbnail: '/images/site/giyg.png',
+    width: 600,
+    height: 385,
     siteURL: 'https://godinyourgarden.com/'
   },
   {
@@ -56,6 +66,8 @@ export const professional = [
     description:
       'Primary front-end builder for new company website. Known for attention to detail with designs and layouts. Partnered with marketing on smaller projects.',
     thumbnail: '/images/site/tms.png',
+    width: 600,
+    height: 367,
     siteURL: 'https://www.totalmortgage.com/'
   },
   {
@@ -65,6 +77,8 @@ export const professional = [
     description:
       'Built modern website. Substantially increased sales after going from a rather bloated and sterile look, to a clear and effective user experience. Authored new content and removed corporate doublespeak.',
     thumbnail: '/images/site/ductz.png',
+    width: 600,
+    height: 386,
     siteURL: '',
     siteInactive: 'Active Summer 2016 - Fall 2020'
   }
