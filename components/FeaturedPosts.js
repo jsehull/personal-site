@@ -18,14 +18,14 @@ const PostBox = styled.div`
 const FeaturedPosts = () => {
   return (
     <PostBox>
+      <a href='/blog/giving-thanks-2020-edition'>
+        <h3>Giving Thanks 2020 Edition</h3>
+      </a>
       <a href='/blog/overcoming-my-fear-of-the-green-squares-overlord'>
         <h3>Overcoming My Fear of the Green Squares Overlord</h3>
       </a>
       <a href='/blog/my-simple-case-for-standard-js'>
         <h3>My Simple Case for Standard JS</h3>
-      </a>
-      <a href='/blog/writing-for-an-audience-of-one'>
-        <h3>Writing for an Audience of One</h3>
       </a>
     </PostBox>
   )
