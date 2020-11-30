@@ -2,7 +2,7 @@
 title: 'Giving Thanks 2020 Edition'
 author: 'Jesse Hull'
 date: '2020-11-30'
-summary: "This has been the greatest year of my life"
+summary: "This has been the greatest year of my life."
 banner: /static/images/giving-thanks-2020-edition/banner.png
 ---
 

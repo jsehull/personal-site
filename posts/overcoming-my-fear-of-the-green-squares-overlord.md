@@ -2,7 +2,7 @@
 title: 'Overcoming My Fear of the Green Squares Overlord'
 author: 'Jesse Hull'
 date: '2020-10-06'
-summary: 'Defining my success and progress by more than what is quantified to the public'
+summary: 'Defining my success and progress by more than what is quantified to the public.'
 banner: /static/images/overcoming-my-fear-of-the-green-squares-overlord/banner.png
 ---
 
