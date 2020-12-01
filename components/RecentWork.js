@@ -1,6 +1,6 @@
 import styled from '@emotion/styled'
 import theme from '../styles/theme'
-import { personal, professional } from '../data/projects'
+import { personal, oss, professional } from '../data/projects'
 
 const ProjectContainer = styled.div`
   display: ${props => (props.data === 'personal' ? 'flex' : 'block')};
@@ -70,7 +70,13 @@ const LinkBox = styled.div`
 
 const RecentWork = ({ data }) => {
   let project
-  data === 'personal' ? (project = personal) : (project = professional)
+  if (data === 'personal') {
+    project = personal
+  } else if (data === 'professional') {
+    project = professional
+  } else if (data === 'oss') {
+    project = oss
+  }
 
   return (
     <ProjectContainer data={data}>

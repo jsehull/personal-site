@@ -39,11 +39,31 @@ export const personal = [
   }
 ]
 
+export const oss = [
+  {
+    id: '1',
+    name: 'Epic React - Kent C. Dodds',
+    tags: '📝 documentation',
+    description:
+      'update README to include fix from issue #27 (Issue #27: Windows: git-sh-setup: file not found)',
+    thumbnail: '/images/site/epic-react.png',
+    codeURL: 'https://github.com/kentcdodds/react-fundamentals/pull/34'
+  },
+  {
+    id: '2',
+    name: 'Netlify CMS',
+    tags: '🐛 bug',
+    description: 'fix(docs): re-add contributor style guide',
+    thumbnail: '/images/site/netlify-cms.png',
+    codeURL: 'https://github.com/netlify/netlify-cms/pull/4610'
+  }
+]
+
 export const professional = [
   {
     id: '1',
     name: 'God in Your Garden',
-    tags: 'Remote, React, Next.js, Emotion',
+    tags: '📡 Remote, React, Next.js, Emotion',
     description:
       "Static website created for book release of independent author. Design is original and inspired by the publisher's cover art materials. Several meetings with client to update content or pivot from initial goals.",
     thumbnail: '/images/site/giyg.png',
@@ -61,7 +81,7 @@ export const professional = [
   {
     id: '3',
     name: 'DUCTZ of Mid Michigan',
-    tags: 'Remote, JavaScript, Sass, HTML',
+    tags: '📡 Remote, JavaScript, Sass, HTML',
     description:
       'Built modern website. Substantially increased sales after going from a rather bloated and sterile look, to a clear and effective user experience. Authored new content and removed corporate doublespeak.',
     thumbnail: '/images/site/ductz.png',

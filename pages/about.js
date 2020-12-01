@@ -29,7 +29,7 @@ const about = () => {
     <Layout pageTitle='About - Jesse Hull'>
       <Section bg='yellow'>
         <Article>
-          <h1>About me</h1>
+          <h1>About Me</h1>
           <p>
             I'm a product guy. That means I like to fine-tune{' '}
             <a href='/work'>my work</a> and ship with excellence.
@@ -81,13 +81,9 @@ const about = () => {
               <li>Slack</li>
             </ul>
             <ul>
-              <li>MDN</li>
-              <li>OSS repos</li>
-              <li>Stack Overflow</li>
-            </ul>
-            <ul>
               <li>VSCode</li>
               <li>Vim</li>
+              <li>WSL 2</li>
               <li>GIMP 2</li>
             </ul>
           </Bullets>

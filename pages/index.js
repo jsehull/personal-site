@@ -23,7 +23,7 @@ const Index = () => {
       </Section>
 
       <Section bg='blue'>
-        <h2>Recent activity</h2>
+        <h2>Recent personal activity</h2>
         <RecentWork data='personal' />
       </Section>
     </Layout>

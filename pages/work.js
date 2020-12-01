@@ -7,7 +7,33 @@ const projects = () => {
     <Layout pageTitle='Work - Jesse Hull'>
       <Section bg='blue'>
         <h1>Developer Experience</h1>
-        <RecentWork data='work' />
+        <p>
+          I have experience working remote, in agency-like settings, as well as
+          with individual clients.
+        </p>
+        <p>
+          Below are some examples of my <b>open source</b> and{' '}
+          <b>professional work</b>.
+        </p>
+        <p>
+          More in-depth activity can be found on my{' '}
+          <a
+            href='http://github.com/jsehull'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            GitHub
+          </a>
+          .
+        </p>
+      </Section>
+      <Section bg='green'>
+        <h2>Open source contributions</h2>
+        <RecentWork data='oss' />
+      </Section>
+      <Section bg='blue'>
+        <h2>Professional work</h2>
+        <RecentWork data='professional' />
       </Section>
     </Layout>
   )
