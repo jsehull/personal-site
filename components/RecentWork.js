@@ -68,6 +68,7 @@ const LinkBox = styled.div`
   }
 `
 
+// data imported from '/data/projects.js'
 const RecentWork = ({ data }) => {
   let project
   if (data === 'personal') {

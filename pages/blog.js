@@ -11,7 +11,7 @@ const blog = ({ posts, title, description, ...props }) => {
         <p>{description} </p>
         <p>My goal is for the words here to inspire us both.</p>
         <p>Not all development in nature.</p>
-        <p> Some industry, some creative, some business, some miscellaneous.</p>
+        <p> Some industry, some personal, some business, some miscellaneous.</p>
       </Section>
 
       <Section bg='purple'>

@@ -13,21 +13,24 @@ const Container = styled.div`
   max-width: ${theme.misc.widthDesktop};
 `
 
+// bg    = background color
+// color = text color
 const Section = ({ id, bg, color, children }) => {
-  let bgclr
+  let bgColor
 
+  // backgrounds color coded to match <Header /> NavMenu buttons
   if (bg === 'blue') {
-    bgclr = theme.colors.blue
+    bgColor = theme.colors.blue // dev area
   } else if (bg === 'green') {
-    bgclr = theme.colors.green
+    bgColor = theme.colors.green // menu/'other' area
   } else if (bg === 'purple') {
-    bgclr = theme.colors.purple
+    bgColor = theme.colors.purple // blog area
   } else if (bg === 'yellow') {
-    bgclr = theme.colors.yellow
+    bgColor = theme.colors.yellow // about/my voice area
   }
 
   return (
-    <StyledSection id={id} bg={bgclr} color={color}>
+    <StyledSection id={id} bg={bgColor} color={color}>
       <Container>{children}</Container>
     </StyledSection>
   )

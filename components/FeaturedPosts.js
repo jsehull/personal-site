@@ -15,6 +15,7 @@ const PostBox = styled.div`
   }
 `
 
+// manually pruning digital garden
 const FeaturedPosts = () => {
   return (
     <PostBox>

@@ -32,7 +32,7 @@ const NavLogo = styled.a`
   }
 `
 
-const NavBar = styled.div`
+const NavMenu = styled.div`
   margin: 0;
   padding: 0;
   display: flex;
@@ -54,6 +54,7 @@ const NavLink = styled.a`
     background: ${theme.colors.blueLines};
   }
 
+  // button colors coded to match <Section /> types
   &:first-child {
     background: ${theme.colors.yellow};
   }
@@ -82,11 +83,11 @@ const Header = () => (
   <StyledHeader>
     <FlexContainer>
       <NavLogo href='/'>jsehull</NavLogo>
-      <NavBar>
+      <NavMenu>
         <NavLink href='/about'>About</NavLink>
         <NavLink href='/work'>Work</NavLink>
         <NavLink href='/blog'>Blog</NavLink>
-      </NavBar>
+      </NavMenu>
     </FlexContainer>
   </StyledHeader>
 )

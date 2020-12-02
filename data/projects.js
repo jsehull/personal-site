@@ -1,3 +1,7 @@
+// used with RecentWork component (examples on pages / and /work)
+// URLS can be external OR internal
+// tags are short, optional bold text
+
 export const personal = [
   {
     id: '1',
