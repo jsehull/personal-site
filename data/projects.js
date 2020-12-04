@@ -85,7 +85,7 @@ export const professional = [
   {
     id: '3',
     name: 'DUCTZ of Mid Michigan',
-    tags: '📡 Remote, JavaScript, Sass, HTML',
+    tags: '📡 Remote, JavaScript, Bootstrap, HTML',
     description:
       'Built modern website. Substantially increased sales after going from a rather bloated and sterile look, to a clear and effective user experience. Authored new content and removed corporate doublespeak.',
     thumbnail: '/images/site/ductz.png',
