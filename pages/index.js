@@ -15,6 +15,17 @@ const Index = () => {
           Currently looking for <b>remote work</b> with a team that understands{' '}
           <b>culture is grown</b>, not manufactured.
         </p>
+        <p>
+          View my{' '}
+          <a
+            href='/docs/jesse-hull-resume-2021.pdf'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            2021 resume
+          </a>
+          .
+        </p>
       </Section>
 
       <Section bg='purple'>
