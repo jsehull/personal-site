@@ -50,7 +50,7 @@ const about = () => {
           <p>
             More on my{' '}
             <a
-              href='/docs/jesse-hull-resume-2020.pdf'
+              href='/docs/jesse-hull-resume-2021.pdf'
               target='_blank'
               rel='noopener noreferrer'
             >
