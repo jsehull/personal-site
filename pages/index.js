@@ -12,10 +12,14 @@ const Index = () => {
           I'm a <b>Front-End Developer </b> and I live in New England 🦞.
         </p>
         <p>
+          Currently working <b>remotely</b> with a team that{' '}
+          <b>champions strong culture</b>.
+        </p>
+        {/* <p>
           Currently looking for <b>remote work</b> with a team that understands{' '}
           <b>culture is grown</b>, not manufactured.
-        </p>
-        <p>
+        </p> */}
+        {/* <p>
           View my{' '}
           <a
             href='/docs/jesse-hull-resume-2021.pdf'
@@ -25,7 +29,7 @@ const Index = () => {
             2021 resume
           </a>
           .
-        </p>
+        </p> */}
       </Section>
 
       <Section bg='purple'>

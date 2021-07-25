@@ -8,8 +8,8 @@ const projects = () => {
       <Section bg='blue'>
         <h1>Developer Experience</h1>
         <p>
-          I have experience working remote, in agency-like settings, as well as
-          with individual clients.
+          I have experience working remotely, with agile teams, in agency-like
+          settings, and with individual clients.
         </p>
         <p>
           Below are some examples of my <b>open source</b> and{' '}
