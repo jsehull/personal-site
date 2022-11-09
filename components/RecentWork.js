@@ -98,7 +98,7 @@ const RecentWork = ({ data }) => {
                     target='_blank'
                     rel='noopener noreferrer'
                   >
-                    view LIVE
+                    view SITE
                   </a>
                 ) : (
                   <p>{repo.siteInactive}</p>

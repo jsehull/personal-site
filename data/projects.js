@@ -66,6 +66,15 @@ export const oss = [
 export const professional = [
   {
     id: '1',
+    name: 'IBM',
+    tags: '📡 Remote, Lightning Web Components',
+    description:
+      'Front-end web developer in the SalesForce ecosystem. Help clients create, maintain, and update experiences for their communities.',
+    thumbnail: '/images/site/ibm.jpg',
+    siteURL: 'https://www.ibm.com/'
+  },
+  {
+    id: '2',
     name: '7Summits - an IBM Company',
     tags: '📡 Remote, Lightning Web Components',
     description:
@@ -74,7 +83,7 @@ export const professional = [
     siteURL: 'https://www.7summitsinc.com/'
   },
   {
-    id: '2',
+    id: '3',
     name: 'God in Your Garden',
     tags: '📡 Remote, React, Next.js, Emotion',
     description:
@@ -83,7 +92,7 @@ export const professional = [
     siteURL: 'https://godinyourgarden.com/'
   },
   {
-    id: '3',
+    id: '4',
     name: 'Total Mortgage Services',
     tags: 'Fullstack (JavaScript, Laravel, MySQL, Sass)',
     description:
@@ -92,7 +101,7 @@ export const professional = [
     siteURL: 'https://www.totalmortgage.com/'
   },
   {
-    id: '4',
+    id: '5',
     name: 'DUCTZ of Mid Michigan',
     tags: '📡 Remote, JavaScript, Bootstrap, HTML',
     description:
